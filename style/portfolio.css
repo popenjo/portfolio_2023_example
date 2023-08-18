@@ -1,0 +1,134 @@
+header, main {min-width:1000px; line-height:-0.02rem;}
+header {
+    position:fixed; left:0; top:0; width:100%; z-index:999;
+    padding:50px 60px 0 60px;
+}
+header nav {}
+header nav .gnb {
+    display:flex;
+    border-bottom:3px solid #000; width:100%;
+    border-top:3px solid #000;
+}
+header nav .gnb a {
+    padding-right:50px;
+    font-size:1.2rem; font-weight:600; margin:10px 0;
+}
+header nav .gnb a:nth-child(1):hover {color:#B998FF; transition:all 0.5s;}
+header nav .gnb a:nth-child(2):hover {color:#FF9898; transition:all 0.5s;}
+header nav .gnb a:nth-child(3):hover {color:#FF9898; transition:all 0.5s;}
+header nav .gnb a:nth-child(4):hover {color:#FF9898; transition:all 0.5s;}
+/* header nav .line {
+    border-bottom:3px solid #000;
+    width:820px; content:''; margin-top:20px;
+} */
+main {}
+main > * {padding:0 60px;}
+main #home {height:94vh; text-align: center;}
+main #home h1 {padding-top:200px;}
+main #home h1 img {}
+main #home .mouse {padding-top:80px; animation:a 0.8s linear alternate infinite;}
+main #home .mouse img {}
+@keyframes a {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(15px);}
+}
+main .btn {
+    display:flex; justify-content: space-between; align-items: center;
+    border-top:3px solid #000;
+}
+main .btn .hashtag {}
+main .btn .hashtag span {
+    margin-right:60px;
+    font-size:1.2rem;
+}
+main .btn .sns {
+    display:flex;
+    flex-flow:column;
+    margin-top:5px;
+}
+main .btn .sns span {
+    margin-bottom:10px;
+}
+/* skill */
+main #skill {padding-top:100px;}
+main #skill .skill_top {
+    display:flex; justify-content:space-between; align-items: center;
+    border-bottom:3px solid #000;
+}
+main #skill .skill_top h1 {
+    font-size:3rem; font-weight:700;
+    margin-bottom:10px;
+}
+main #skill .skill_top .hashtag_right {display: flex; flex-flow:row nowrap;}
+main #skill .skill_top .hashtag_right p {
+    font-size:1.2rem; margin-right:15px;
+}
+main #skill .container {
+    height:730px;
+    display:flex; flex-flow:row wrap;
+    position:relative; left:100px;
+}
+main #skill .container li {
+    width:50%; margin-bottom:60px; padding-top:20px;
+    /* 아이콘 ,글자 옆으로 정렬하는 flex */
+    display:flex; align-items: center;
+    position:relative;
+}
+main #skill .container li::after {
+    position:absolute; top:120%;
+    display:block; content:''; width:73%; height:1px;
+    border-bottom:2px dashed #888;
+}
+main #skill .container li .icon {
+    margin-right:22px;
+    width:60px;
+}
+main #skill .container li .icon img {}
+main #skill .container li .contents {
+    width:calc(100% - 68px);
+    font-size:1.2rem; font-weight:600;
+    line-height:1.2em;
+}
+/* profile */
+main #profile {height:88vh;}
+main #profile h1 {
+    text-align: center;
+    margin-top:110px;
+}
+main #profile h1 img {}
+main #profile .container {
+    margin-top:150px;
+    display:flex; flex-flow:row nowrap; justify-content:space-evenly;
+}
+main #profile .container .my_pro {}
+main #profile .container .my_pro .photo {
+    animation:b 0.8s linear alternate infinite;
+}
+@keyframes b {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(10px);}
+}
+main #profile .container .my_pro .photo img {}
+main #profile .container .my_pro .my {
+    display:flex; flex-flow:column nowrap; align-items: center;  margin-top:15px;
+}
+main #profile .container .my_pro .my span {
+    font-size:1.2rem; font-weight:600; margin-top:10px;
+}
+main #profile .container .my_pro .my span:first-child {}
+main #profile .container .info {display:flex; flex-flow:column; justify-content:space-between;}
+main #profile .container .info p {font-size:1.2rem; font-weight:600;}
+/* redesign */
+main #project_web1 {}
+main #project_web1 h1 {
+    font-size:2rem; font-weight:700;
+}
+main #project_web1 .preview {
+    margin-top:25px; text-align: center;
+}
+main #project_web1 .preview img {}
+main #project_web1 .all {display: flex; flex-flow:row nowrap; justify-content:space-around; align-items: center;}
+main #project_web1 .all .project_info {}
+main #project_web1 .all .project_info p {}
+main #project_web1 .all .link {}
+main #project_web1 .all .link a {}
