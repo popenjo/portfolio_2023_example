@@ -1,4 +1,5 @@
-header, main {min-width:1000px; line-height:-0.02rem;}
+body, html {scroll-behavior: smooth;}
+header, main {min-width:1000px; letter-spacing:-0.02rem;}
 header {
     position:fixed; left:0; top:0; width:100%; z-index:999;
     padding:50px 60px 0 60px;
@@ -13,10 +14,7 @@ header nav .gnb a {
     padding-right:50px;
     font-size:1.2rem; font-weight:600; margin:10px 0;
 }
-header nav .gnb a:nth-child(1):hover {color:#B998FF; transition:all 0.5s;}
-header nav .gnb a:nth-child(2):hover {color:#FF9898; transition:all 0.5s;}
-header nav .gnb a:nth-child(3):hover {color:#FF9898; transition:all 0.5s;}
-header nav .gnb a:nth-child(4):hover {color:#FF9898; transition:all 0.5s;}
+header nav .gnb a:hover {color:#888; transition:all 0.5s;}
 /* header nav .line {
     border-bottom:3px solid #000;
     width:820px; content:''; margin-top:20px;
@@ -129,6 +127,12 @@ main #project_web1 .preview {
 main #project_web1 .preview img {}
 main #project_web1 .all {display: flex; flex-flow:row nowrap; justify-content:space-around; align-items: center;}
 main #project_web1 .all .project_info {}
-main #project_web1 .all .project_info p {}
+main #project_web1 .all .project_info p {font-size:1.2rem; font-weight:600; line-height:35px; letter-spacing:-0.02rem;}
 main #project_web1 .all .link {}
-main #project_web1 .all .link a {}
+main #project_web1 .all .link a {
+    background: #000; color:#fff; border-radius:10px;
+    padding:15px;
+}
+main #project_web1 .all .link a:last-child {background:#FF5959;}
+main #project_web1 .all .link a:last-child:hover {background:#FF9898;}
+main #project_web1 .all .link a:hover {background:#888; transition:all 0.3s;}
